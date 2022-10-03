@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: aqua;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.game-container {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-canvas {
+    width: 450px;
+    height: 450px;
+    background-color: azure;
+    position: relative;
+}
+
+.game-title {
+    text-transform: uppercase;
+    color: darkslategray;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+   
+}
+
+.fruit,
+.grinch {
+    width: 48px;
+    height: 48px;
+}
+
+.grinch {
+    display: none;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.m-amount {
+    font-weight: 1000;
+    color: red;
+}
+
+.button {
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.game-time-txt {
+    display: none;
+}
+
+.difficulty-modal {
+    width: 250px;
+    height: 350px;
+    background-color: aqua;
+}
+
+.modal-title {
+    font-size: 20px;
+    color: darkslategray;
+    margin: 10px auto 30px
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fruit-modal {
+    width: 350px;
+    height: 320px;
+    background-color: aqua;
+    position: absolute;
+    /* top: calc(50% - 350px / 2); */
+}
+
+.fruit-btn-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+.fruit-button {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

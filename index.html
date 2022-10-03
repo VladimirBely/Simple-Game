@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork 16</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Fruit Rescue</h1>
+        <div class="game-canvas" id="game-canvas">
+            <div class="icon" id="icon">
+                <img src="./images/mandarin.png" alt="fruit" id="fruit" class="fruit">
+                <img src="./images/grinch.png" alt="Grinch" id="grinch" class="grinch">
+            </div>
+        </div>
+        <div class="game-info">
+            <p>You caught <span id="m-amount" class="m-amount">0</span> fruits</p>
+            <p id="game-time-txt" class="game-time-txt">15 seconds left</p>
+            <div class="buttons-container">
+                <button class="button start-button" id="start-button">Start Game</button>
+            </div>
+        </div>
+        <dialog class="difficulty-modal" id="difficulty-modal">
+            <h1 class="modal-title">Choose difficulty of the game:</h1>
+            <div class="button-wrapper">
+                <button class="button start-button" id="easy-btn">Easy</button>
+                <button class="button start-button" id="medium-btn">Medium</button>
+                <button class="button start-button" id="hard-btn">Hard</button>
+            </div>
+        </dialog>
+        <dialog class="fruit-modal" id="fruit-modal">
+            <h2>Choose the fruit:</h2>
+            <div class="fruit-btn-wrapper">
+                <input type="image" class="button fruit-button" id="apple-btn" src="./images/apple.png">
+                <input type="image" class="button fruit-button" id="banana-btn" src="./images/banana.png">
+                <input type="image" class="button fruit-button" id="cherry-btn" src="./images/cherries.png">
+                <input type="image" class="button fruit-button" id="grape-btn" src="./images/grapes.png">
+                <input type="image" class="button fruit-button" id="strawberry-btn" src="./images/strawberry.png">
+                <input type="image" class="button fruit-button" id="mandarin-btn" src="./images/mandarin.png">
+            </div>
+        </dialog>
+    </div>
+
+</body>
+
+</html>
